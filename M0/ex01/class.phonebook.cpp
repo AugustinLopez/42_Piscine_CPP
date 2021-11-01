@@ -1,6 +1,7 @@
 #include "class.phonebook.hpp"
 #include <iostream>
 #include <iomanip>
+#include <stdlib.h>
 
 Phonebook::Phonebook(void) : _count(0) {
 	return ;
@@ -64,12 +65,10 @@ int Phonebook::search(void) const {
         return (0);
     }
     try {
-        index = std::stoul(input, nullptr);
+        index = strtoul(input.c_str(), NULL, 10);
     } catch (...) {
         std::cerr << "Error: could not parse a valid index from input" << std::endl;
         return (-1);
     }
     return (this->_display_one(index));
-
-
 }

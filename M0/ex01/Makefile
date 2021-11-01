@@ -1,6 +1,6 @@
 NAME=phonebook
 COMPILER=clang++
-FLAGS=-g3 -Werror -Wall -Wextra -MMD -MP -pedantic
+FLAGS=-g3 -Werror -Wall -Wextra -MMD -MP -pedantic -std=c++98
 EXT=cpp
 
 VPATH=
