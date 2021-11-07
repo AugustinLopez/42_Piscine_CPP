@@ -1,13 +1,13 @@
-NAME=replace
+NAME=a.out
 COMPILER=clang++
-FLAGS=-g3 -Werror -Wall -Wextra -MMD -MP -std=c++98
+FLAGS=-g3 -Werror -Wall -Wextra -MMD -MP -pedantic -std=c++98
 EXT=cpp
 
 VPATH=
 PATH_OBJ=.object/
 PATH_HDR=.
 
-SRC=main
+SRC=main Fixed
 
 CC_O=$(COMPILER) $(FLAGS) -c -I$(PATH_HDR)
 CC_C=$(COMPILER) $(FLAGS) $(OBJ)
@@ -33,8 +33,6 @@ $(PATH_OBJ):
 clean:
 	-@printf " ===> \e[31mDeleted directory\e[0m: $(PATH_OBJ)\n"
 	@rm -rf $(PATH_OBJ)
-	-@printf " ===> \e[31mDeleted files\e[0m: *.REPLACE\n"
-	@rm -f *.REPLACE
 
 fclean: clean
 	-@printf " ===> \e[31mDeleted executable\e[0m: $(NAME)\n"

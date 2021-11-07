@@ -9,7 +9,7 @@ Karen::Karen(void) {
     return ;
 }
 
-Karen::~Karen() {
+Karen::~Karen(void) {
     return ;
 }
 

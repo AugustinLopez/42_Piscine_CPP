@@ -12,7 +12,7 @@ class HumanB {
     public:
         HumanB(void);
         HumanB(std::string name);
-        ~HumanB();
+        ~HumanB(void);
         void rename(std::string name);
         void setWeapon(Weapon &weapon);
         void attack(void) const;

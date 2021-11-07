@@ -11,7 +11,7 @@ HumanB::HumanB(std::string name): _weapon(NULL), _name(name) {
   return ;
 }
 
-HumanB::~HumanB() {
+HumanB::~HumanB(void) {
   return ;
 }
 

@@ -7,7 +7,7 @@ class Karen {
     public:
         typedef void (Karen::*funPtr)(void) const;
         Karen(void);
-        ~Karen();
+        ~Karen(void);
         void complain(std::string level) const;
     
     private:

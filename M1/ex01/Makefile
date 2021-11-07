@@ -1,6 +1,6 @@
 NAME=Thriller
 COMPILER=clang++
-FLAGS=-g3 -Werror -Wall -Wextra -MMD -MP -pedantic -std=c++98
+FLAGS=-g3 -Werror -Wall -Wextra -MMD -MP -std=c++98
 EXT=cpp
 
 VPATH=

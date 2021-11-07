@@ -9,7 +9,7 @@ Karen::Karen(void) {
     return ;
 }
 
-Karen::~Karen() {
+Karen::~Karen(void) {
     return ;
 }
 
@@ -57,7 +57,7 @@ void Karen::complain_filter(std::string level) const {
             break ;
     }
     if (i == sizeof(this->_msg)/sizeof(*this->_msg)) {
-        std::cout << "[Probably complaining about insignificant problem ]" << std::endl;
+        std::cout << "[Probably complaining about insignificant problems ]" << std::endl;
         return ;
     }
     for (unsigned j = i;j < sizeof(this->_msg)/sizeof(*this->_msg);j++) {

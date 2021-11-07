@@ -16,7 +16,7 @@ Zombie::Zombie(std::string name): _name(name) {
 /**
  * Destructor. Destruction message is printed on stdout to respect subject requirement.
  */
-Zombie::~Zombie() {
+Zombie::~Zombie(void) {
     std::cout << "<" + this->_name + "> has been fired !" << std::endl;
 }
 
