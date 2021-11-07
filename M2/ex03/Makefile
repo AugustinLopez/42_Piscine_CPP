@@ -7,7 +7,7 @@ VPATH=
 PATH_OBJ=.object/
 PATH_HDR=.
 
-SRC=main Fixed
+SRC=main Fixed Point bsp
 
 CC_O=$(COMPILER) $(FLAGS) -c -I$(PATH_HDR)
 CC_C=$(COMPILER) $(FLAGS) $(OBJ)

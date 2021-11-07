@@ -15,8 +15,9 @@ int main(void) {
     std::cout << a << std::endl;
     std::cout << b << std::endl;
     std::cout << Fixed::max(a, b) << std::endl;
-    std::cout << Fixed::min(a, b) << std::endl;
+
     std::cout << "\n\nMyOwnTest:\n" << std::endl;
+    std::cout << Fixed::min(a, b) << std::endl;
     std::cout << --a << std::endl;
     std::cout << a << std::endl;
     std::cout << a-- << std::endl;
@@ -24,5 +25,10 @@ int main(void) {
     std::cout << c << std::endl;
     std::cout << d << std::endl;
     std::cout << e << std::endl;
+    std::cout << (a != b) << std::endl;
+    std::cout << (a != a) << std::endl;
+    std::cout << (a < b) << std::endl;
+    std::cout << (a < a) << std::endl;
+    std::cout << (a <= a) << std::endl;
     return (0);
 }
